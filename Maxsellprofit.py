@@ -1,3 +1,8 @@
+# Find the max profit of the stock from start to end 
+# calculate profit of first two point in the array
+# compare by moving the buy and sell value by comparing the max profit
+# change sell value if profit higher and change buy value if pointing value is smaller than buy value
+
 def buy_sell_stock_prices(stock_prices):
     current_buy = stock_prices[0] #starting buying value
     global_sell = stock_prices[1] #starting selling value
@@ -20,3 +25,6 @@ stock_price_2 = [8, 6, 5, 4, 3, 2, 1]
 
 print(buy_sell_stock_prices(stock_price_1))
 print(buy_sell_stock_prices(stock_price_2))
+
+# Time complexity: O(n)
+# Space complexity: O(1)
